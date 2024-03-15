@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.Interface">
+  <grid id="27dc6" binding="jamban" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="40" bottom="20" right="40"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="448"/>
+    </constraints>
+    <properties>
+      <background color="-66848"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="168c2" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="20" bottom="0" right="20"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-66848"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="f9bb7" class="javax.swing.JLabel" binding="Numar1">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <foreground color="-9013660"/>
+              <text value="Numar1"/>
+            </properties>
+          </component>
+          <component id="21611" class="javax.swing.JLabel" binding="Rezultat">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <foreground color="-9013660"/>
+              <text value="Rezultat"/>
+            </properties>
+          </component>
+          <component id="6802b" class="javax.swing.JLabel" binding="Numar2">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="16"/>
+              <foreground color="-9013660"/>
+              <text value="Numar2"/>
+            </properties>
+          </component>
+          <component id="ab3c0" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1446454"/>
+              <font size="16"/>
+            </properties>
+          </component>
+          <component id="497b3" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1446454"/>
+              <editable value="false"/>
+              <font size="16"/>
+            </properties>
+          </component>
+          <component id="d8e0c" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1446454"/>
+              <font size="16"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="a4703" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-66848"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="725c2" class="javax.swing.JButton" binding="adunareButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1446454"/>
+              <enabled value="true"/>
+              <font size="16"/>
+              <foreground color="-9013660"/>
+              <hideActionText value="false"/>
+              <text value="Adunare"/>
+            </properties>
+          </component>
+          <component id="bbedf" class="javax.swing.JButton" binding="scadereButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1446454"/>
+              <font size="16"/>
+              <foreground color="-9013660"/>
+              <text value="Scadere"/>
+            </properties>
+          </component>
+          <component id="2d822" class="javax.swing.JButton" binding="inmultireButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1446454"/>
+              <font size="16"/>
+              <foreground color="-9013660"/>
+              <text value="Inmultire"/>
+            </properties>
+          </component>
+          <component id="612a2" class="javax.swing.JButton" binding="impartireButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1446454"/>
+              <font size="16"/>
+              <foreground color="-9013660"/>
+              <text value="Impartire"/>
+            </properties>
+          </component>
+          <component id="be054" class="javax.swing.JButton" binding="integrareButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1446454"/>
+              <font size="16"/>
+              <foreground color="-9013660"/>
+              <text value="Integrare"/>
+            </properties>
+          </component>
+          <component id="10892" class="javax.swing.JButton" binding="derivareButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1446454"/>
+              <font size="16"/>
+              <foreground color="-9013660"/>
+              <text value="Derivare"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
