@@ -1,5 +1,6 @@
 package model;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -29,7 +30,7 @@ public class Polinom {
             this.addMonom(new Monom(coefficient, power));
         }
         if(this.monomi.isEmpty())
-            System.out.println("date introduse gresit");
+            JOptionPane.showMessageDialog(null,"Numerele introduse nu sunt corecte!");
     }
     public void addMonom(Monom x)
     {
@@ -94,7 +95,7 @@ public class Polinom {
         }
         return y;
     }
-    public ArrayList<Polinom> impartire(Polinom x) throws Exception{
+    public ArrayList<Polinom> impartire(Polinom x){
         ArrayList<Polinom> rezu=new ArrayList<Polinom>();
         Polinom cat=new Polinom();
         Polinom rest=new Polinom();
@@ -102,7 +103,7 @@ public class Polinom {
         Polinom copie=new Polinom();
         copie.monomi=x.monomi;
         if(Collections.max(x.monomi.keySet())==0 && x.monomi.get(0).getCoeficient()==0)
-            throw new Exception("Impartire cu 0");
+            JOptionPane.showMessageDialog(null,"Impartire cu 0 nu este permisa!");
         if(Collections.max(rest.monomi.keySet()) >= Collections.max(copie.monomi.keySet())){
             while(!rest.monomi.isEmpty() &&Collections.max(rest.monomi.keySet()) >= Collections.max(copie.monomi.keySet())){
                 int gradx = Collections.max(copie.monomi.keySet());
@@ -119,11 +120,15 @@ public class Polinom {
             rezu.add(rest);
             return rezu;
         }
-        else return x.impartire(this);
+        else {
+            rezu.add(new Polinom(""));
+            rezu.add(copie);
+            return rezu;
+        }
     }
     public Polinom derivare(){
         Polinom der=new Polinom();
-        for(Map.Entry<Integer, Monom> aux : this.monomi.entrySet())
+    for(Map.Entry<Integer, Monom> aux : this.monomi.entrySet())
         {
             Monom nou= new Monom(aux.getValue().getCoeficient()* aux.getKey(), aux.getKey()-1);
             der.addMonom(nou);

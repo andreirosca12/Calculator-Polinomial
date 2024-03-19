@@ -1,5 +1,6 @@
 package model;
 
+
 public class Monom {
     private Number coeficient;
     private int grad;
@@ -27,14 +28,14 @@ public class Monom {
             return "";
         if(this.coeficient.doubleValue()<0) {
             if (this.coeficient.doubleValue() - this.coeficient.intValue() < 0.01)
-                return " " + this.coeficient.intValue() + "*x^" + this.grad;
+                return  this.coeficient.intValue() + "*x^" + this.grad;
             else
-                return " " + this.coeficient.doubleValue() + "*x^" + this.grad;
+                return  String.format("%.2f", this.coeficient.doubleValue()) + "*x^" + this.grad;
         }
         else
             if(this.coeficient.doubleValue()-this.coeficient.intValue()<0.01)
-            return " +"+this.coeficient.intValue()+"*x^"+this.grad;
+            return "+"+this.coeficient.intValue()+"*x^"+this.grad;
                 else
-            return " +"+this.coeficient.doubleValue()+"*x^"+this.grad;
+            return "+"+String.format("%.2f", this.coeficient.doubleValue())+"*x^"+this.grad;
     }
 }

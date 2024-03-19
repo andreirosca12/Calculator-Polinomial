@@ -28,7 +28,6 @@ public class Controller {
             public void actionPerformed(ActionEvent e) {
                 JTextField p1=view.tf3();
                 JTextField p2=view.tf1();
-                System.out.println(p1.getText());
                 pol1=new Polinom(p1.getText());
                 pol2=new Polinom(p2.getText());
                 Polinom x= pol1.adunare(pol2);
@@ -44,7 +43,6 @@ public class Controller {
             public void actionPerformed(ActionEvent e) {
                 JTextField p1=view.tf3();
                 JTextField p2=view.tf1();
-                System.out.println(p1.getText());
                 pol1=new Polinom(p1.getText());
                 pol2=new Polinom(p2.getText());
                 Polinom x= pol1.scadere(pol2);
@@ -59,7 +57,6 @@ public class Controller {
             public void actionPerformed(ActionEvent e) {
                 JTextField p1=view.tf3();
                 JTextField p2=view.tf1();
-                System.out.println(p1.getText());
                 pol1=new Polinom(p1.getText());
                 pol2=new Polinom(p2.getText());
                 Polinom x= pol1.inmultire(pol2);
@@ -74,7 +71,6 @@ public class Controller {
             public void actionPerformed(ActionEvent e) {
                 JTextField p1=view.tf3();
                 JTextField p2=view.tf1();
-                System.out.println(p1.getText());
                 pol1=new Polinom(p1.getText());
                 pol2=new Polinom(p2.getText());
                 ArrayList<Polinom> x=new ArrayList<Polinom>();

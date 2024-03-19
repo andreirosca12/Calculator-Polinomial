@@ -1,11 +1,9 @@
 package view;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Interface {
-    private JPanel jamban;
+    private JPanel principal;
     private JTextField textField1;
     private JTextField textField2;
     private JTextField textField3;
@@ -21,16 +19,10 @@ public class Interface {
 
     public Interface(){
         JFrame frame = new JFrame("Calculator de Polinoame");
-        frame.setContentPane(jamban);
+        frame.setContentPane(principal);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 500);
         frame.setVisible(true);
-        adunareButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
     }
     public JButton getButonAdunare(){
         return adunareButton;
